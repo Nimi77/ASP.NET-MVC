@@ -1,0 +1,19 @@
+@model List<UserData>
+    
+@{
+    ViewData["Title"] = "User Profiles";
+}
+
+<h2>All Users </h2>
+<a asp-controller="User" asp-action="AddUser" class="btn btn-primary">Add User</a>
+<div class="text-center">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Location</th>
+                <th>PhoneNumber</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
